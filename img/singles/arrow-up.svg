@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="146px" height="146px" version="1.0"
+  shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+  fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 6.8 6.8" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <path fill="#FF6600"
+      d="M5.33 4.63c-0.03,0.03 -0.07,0.05 -0.1,0.05 -0.04,0 -0.08,-0.02 -0.11,-0.05l-1.72 -1.72 -1.72 1.72c-0.03,0.03 -0.07,0.05 -0.1,0.05 -0.04,0 -0.08,-0.02 -0.1,-0.05l-0.22 -0.22c-0.03,-0.03 -0.05,-0.06 -0.05,-0.1 0,-0.03 0.02,-0.07 0.05,-0.1l2.04 -2.04c0.03,-0.03 0.06,-0.05 0.1,-0.05 0.04,0 0.07,0.02 0.1,0.05l2.05 2.04c0.02,0.03 0.04,0.07 0.04,0.1 0,0.04 -0.02,0.07 -0.04,0.1l-0.22 0.22z" />
+    <path fill="none" stroke="#FF6600" stroke-width="0.38" stroke-miterlimit="22.9256"
+      d="M3.4 0.19c1.77,0 3.21,1.44 3.21,3.21 0,1.77 -1.44,3.21 -3.21,3.21 -1.77,0 -3.21,-1.44 -3.21,-3.21 0,-1.77 1.44,-3.21 3.21,-3.21z" />
+  </g>
+</svg>

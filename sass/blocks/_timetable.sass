@@ -1,0 +1,38 @@
+.timetable
+  position: relative
+  background: $text-color
+  color: $background
+  text-align: center
+  border-bottom-right-radius: 50% 5%
+  border-bottom-left-radius: 50% 5%
+  &__container
+    padding: 50px 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__title
+    width: 100%
+    font-weight: 400
+    text-transform: uppercase
+  &__subtitle
+    width: 100%
+    text-align: center
+    margin-bottom: 1.5em
+  &__parallel,
+  &__lakhmi
+    width: 40%
+    & p
+      text-align: center
+    & dl
+      border-top: 1px solid $background
+      padding: 30px
+      & dt
+        font-weight: 600
+        margin-top: 1.5em
+        margin-bottom: 1em
+      & dd
+        margin-bottom: 1em
+
+.bacground
+  background-color: $background

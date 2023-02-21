@@ -1,0 +1,99 @@
+.offers
+  &__container
+    margin: 100px auto
+  &__title
+    text-align: center
+    font-weight: 400
+    margin: 1em 0
+  &__wrapper
+    border-radius: 8px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: start
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 440px
+      height: 440px
+      left: 0
+      top: 0
+      background: rgba(250, 120, 70, 0.35)
+      filter: blur(100px)
+      z-index: -1
+  &__list
+    list-style: none
+    width: 35%
+    & li
+      position: relative
+  &__description
+    height: 460px
+    overflow: auto
+    width: 60%
+    background: url(../img/decore/IMG_0650_2.png) 0 0/auto 100% no-repeat
+    position: relative
+    z-index: 2
+  &__item
+    display: block
+    text-align: right
+    margin-bottom: 0.5em
+    font-weight: 600
+    font-size: 1.2em
+    text-align: right
+    padding: 7px
+    border-bottom: 1px solid $background
+    &-active
+      color: $text-decoration-color
+  &__button
+    margin-left: auto
+    margin-top: 2em
+    & a
+      width: 100%
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      & svg
+        width: 25px
+        height: 25px
+        margin-right: 20px
+        fill: #FA7846
+        fill-rule: evenodd
+        clip-rule: evenodd
+  &__arrow
+    display: block
+    width: 25px
+    height: 25px
+    position: absolute
+    z-index: 3
+    left: 0
+    top: 0
+    &-svg
+      width: 25px
+      height: 25px
+      fill: $text-decoration-color
+      position: absolute
+      z-index: 1
+      top: 0
+      right: 0
+    &-hidden
+      display: none
+
+.offer
+  position: relative
+  &__description
+    display: none
+    min-height: 100%
+    padding: 20px
+    padding-top: 35px
+    background-color: #fffffff1
+    border-radius: 4px
+    &-active
+      display: block
+    &>h4
+      color: $text-decoration-color
+      text-align: center
+      margin-bottom: 1.5em
+  &__text
+    text-align: justify

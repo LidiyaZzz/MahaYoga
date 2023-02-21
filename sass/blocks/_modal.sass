@@ -1,0 +1,58 @@
+.modal
+  width: 100vw
+  height: 100vh
+  position: fixed
+  z-index: 2
+  left: -100vw
+  top: 0
+  transition: all 2s
+  &.open
+    display: block
+    left: 0
+    top: 0
+  &__overlay
+    width: 100%
+    height: 100%
+    background-color: #a09494c0
+    position: static
+    padding: 2em
+  &__dialog
+    width: 50%
+    max-height: 70%
+    margin: auto
+    padding: 2em
+    background-color: #BDBDBD
+  &__close
+    margin-bottom: 2em
+    padding: 3px
+    display: inline-block
+    border: 1px solid $text-color
+    border-radius: 4px
+    cursor: pointer
+    transition: all 0.4s
+  &__content
+    text-align: right
+    & h3
+      text-align: center
+      margin-bottom: 1.5em
+    & form
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 70%
+      margin: auto
+    & input,
+    & textarea,
+    & .button
+      margin-bottom: 1.1em
+      width: 100%
+    & input
+      min-height: 3em
+    & input,
+    & textarea
+      padding: 1em
+    & textarea
+      min-height: 6em
+      max-height: 12em
+      min-width: 100%
+      max-width: 100%

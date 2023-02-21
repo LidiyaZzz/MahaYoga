@@ -1,0 +1,84 @@
+.articles
+  &__container
+    padding: 50px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    position: relative
+  &__title
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 1em
+  &__item
+    text-align: right
+    border-bottom: 1px solid #00000083
+    margin-bottom: 1em
+    min-height: 2em
+    padding: 1em 0
+    &-active
+      color: $text-decoration-color
+  &__list
+    position: absolute
+    z-index: 2
+    opacity: 1
+    right: 0
+    top: 0
+    width: 28%
+    list-style: none
+    transition: all ease-out 0.3s
+    &-hidden
+      opacity: 0
+      z-index: -1
+      transition: all ease-out 0.3s
+
+.article
+  position: relative
+  z-index: 1
+  width: 70%
+  transition: all ease-out 0.3s
+  &-expand
+    width: 100%
+    transition: all ease-out 0.3s
+  &::before
+    content: ''
+    position: absolute
+    width: 500px
+    height: 400px
+    left: 0
+    top: -2em
+    background: rgba(250, 120, 70, 0.4)
+    filter: blur(50px)
+    border-radius: 295px
+    transform: rotate(5deg)
+    z-index: -1
+  &__border
+    padding: 20px
+    border: 1px solid $background
+    box-shadow: 0 0 0 1px #ffffff
+  &__img
+    height: 350px
+    overflow: hidden
+    &>img
+      display: block
+      height: 100%
+      width: 100%
+      object-fit: contain
+  &__content
+    display: none
+    margin: 30px
+    &-active
+      display: block
+
+  &__text-cut
+    line-height: 1.8em
+    font-weight: 400
+    margin-bottom: 0.8em
+    text-align: justify
+  &__title
+    margin-bottom: 1em
+  &__btn
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: auto
+    max-width: 200px

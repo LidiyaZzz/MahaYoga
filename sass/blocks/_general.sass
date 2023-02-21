@@ -1,0 +1,104 @@
+.general
+  background-color: $background
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    width: 480px
+    height: 454px
+    left: -5%
+    top: 20%
+    background: rgba(250, 120, 70, 0.15)
+    filter: blur(200px)
+    z-index: 1
+  &__floor
+    position: absolute
+    left: 0
+    right: 0
+    top: 60%
+    width: 100%
+    height: 40%
+    background: url(../img/decore/back-header.png) 0 0/100% 100% no-repeat
+    z-index: 0
+  &__container
+    display: flex
+    justify-content: space-between
+    position: relative
+  &__text
+    width: 60%
+    padding: 30px 0
+    position: relative
+    z-index: 2
+  &__img
+    width: 28%
+    height: 420px
+    position: relative
+    z-index: 1
+    &-wrapp
+      height: 100%
+      position: relative
+      z-index: 2
+      &::before
+        content: ''
+        position: absolute
+        width: 400px
+        height: 400px
+        right: 0px
+        top: 7px
+        background: rgba(250, 120, 70, 0.15)
+        filter: blur(200px)
+        z-index: 1
+      &::after
+        content: ''
+        position: absolute
+        width: 400px
+        height: 400px
+        left: 0px
+        top: 0px
+        background: rgba(250, 120, 70, 0.4)
+        filter: blur(50px)
+        border-radius: 219px
+        transform: rotate(5.43deg)
+        z-index: 1
+      & img
+        width: auto
+        height: 380px
+        object-fit: cover
+        position: relative
+        z-index: 2
+
+  &__title
+    margin: 1em 0
+    text-shadow: 1px 1px 3px #99999988
+    text-align: left
+  &__list
+    list-style: none
+    & li
+      margin-left: 1em
+      line-height: 2em
+      &::before
+        content: '✔'
+        margin-right: 0.5em
+      & span
+        color: $text-decoration-color
+  &__slide-pagination
+    position: absolute
+    width: 100%
+    height: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: #fff
+    border: 20px solid #ffffff
+    border-radius: 50% 50% 0 0
+    z-index: 2
+.swiper-pagination-bullet-active
+  width: 10px
+  height: 10px
+  background-color: $text-decoration-color
+  transition: all ease-out 0.2s
+
+.swiper-pagination-bullets
+  bottom: 0 !important
+
+// 

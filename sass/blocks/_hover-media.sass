@@ -1,0 +1,46 @@
+
+@media (min-width:992px)
+  .header
+    &__logo
+      &:hover
+        &::before
+          width: 80px
+          height: 80px
+        & .header__logo-svg
+          fill: $text-decoration-color
+
+    &__menu>li>a:hover
+      color: $text-decoration-color
+      &::before
+        width: 100%
+        transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1)
+      &::after
+        background: transparent
+        width: 100%
+        transition: 0s
+
+    &__social-link:hover .header__social-svg
+      fill: $text-decoration-color
+
+  .offers
+    &__item:hover
+      color: $text-decoration-color
+    &__button:hover
+      transition: 0.2s
+      background-color: $text-decoration-color
+      color: $background
+      & svg
+        transition: 0.2s
+        fill: $background
+
+  .footer
+    &__social
+      &-link:hover .footer__social-svg
+        fill: $text-decoration-color
+    &__menu>li>a:hover
+      color: $text-decoration-color
+    &__logo
+      &:hover
+        &::before
+          width: 80px
+          height: 80px
