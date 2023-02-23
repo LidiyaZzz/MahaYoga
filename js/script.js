@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', () =>{
 
   
@@ -215,7 +214,6 @@ const expositionSwiper = new Swiper('.exposition__gallery', {
 
   // создаем новый p для обрезанного текста и складываем туда обрезанный текст
   function createDivForCutText(ParentTextElem, fullTextElements) {
-    console.log(ParentTextElem);    
     ParentTextElem.forEach((parent, i) => {
       let newParagraph = document.createElement('p');
       newParagraph.classList.add('article__text-cut');
