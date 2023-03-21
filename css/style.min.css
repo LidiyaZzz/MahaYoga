@@ -27,7 +27,6 @@ p, .text {
   line-height: 1.8em;
   font-weight: 400;
   margin-bottom: 0.8em;
-  text-align: justify;
 }
 
 h1,
@@ -436,6 +435,7 @@ template {
   height: 100px;
 }
 .header__logo-link {
+  cursor: pointer;
   display: block;
   width: 100%;
   height: 100%;
@@ -443,7 +443,6 @@ template {
   z-index: 2;
 }
 .header__logo-svg {
-  cursor: pointer;
   transition: all ease-out 0.1s;
   width: 100%;
   height: 100%;
@@ -485,16 +484,23 @@ template {
 .header__menu > li:not(:last-child) {
   margin-right: 40px;
 }
+.header__contacts {
+  margin-left: 20px;
+}
+.header__address {
+  font-size: 0.8rem;
+  text-align: right;
+}
 .header__social {
-  margin-left: 50px;
+  text-align: right;
 }
 .header__social-link {
   width: 30px;
   height: 30px;
   display: inline-block;
 }
-.header__social-link:not(:last-child) {
-  margin-right: 10px;
+.header__social-link:not(:first-child) {
+  margin-left: 10px;
 }
 .header__social-svg {
   transition: all ease-out 0.1s;
@@ -741,9 +747,6 @@ template {
   text-align: center;
   margin-bottom: 1.5em;
 }
-.offer__text {
-  text-align: justify;
-}
 
 .timetable {
   position: relative;
@@ -758,12 +761,12 @@ template {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 .timetable__title {
   width: 100%;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 2em;
 }
 .timetable__subtitle {
   width: 100%;
@@ -815,7 +818,6 @@ template {
 }
 .about__text {
   width: 70%;
-  text-align: justify;
 }
 
 .exposition {
@@ -1023,7 +1025,6 @@ template {
   line-height: 1.8em;
   font-weight: 400;
   margin-bottom: 0.8em;
-  text-align: justify;
 }
 .article__title {
   margin-bottom: 1em;
@@ -1170,9 +1171,6 @@ template {
   }
 }
 @media (max-width: 1200px) {
-  body {
-    font-size: 15px;
-  }
   .container {
     max-width: 900px;
   }
@@ -1199,6 +1197,9 @@ template {
   }
 }
 @media (max-width: 992px) {
+  body, p, .text {
+    font-size: 15px;
+  }
   .container {
     max-width: 730px;
   }
@@ -1210,7 +1211,6 @@ template {
     font-size: 1.1em;
   }
   p, .text {
-    font-size: 14px;
     line-height: 1.6em;
     margin-bottom: 0.7em;
   }
@@ -1273,9 +1273,6 @@ template {
   }
 }
 @media (max-width: 767px) {
-  body, p, .text {
-    font-size: 14px;
-  }
   .container {
     max-width: 90vw;
   }
@@ -1420,27 +1417,32 @@ template {
   h1, .title {
     font-size: 1.5em;
   }
-  body, p, .text {
-    font-size: 13px;
-  }
   .button {
     min-height: 35px;
     padding: 0.5em 1em;
   }
+  .general__container {
+    flex-wrap: wrap;
+    position: relative;
+  }
   .general__text {
-    width: 80%;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .general__title {
+    text-align: center;
+    margin-bottom: 0;
   }
   .general__img {
-    width: 20%;
-  }
-  .general__img {
-    height: 200px;
+    width: 100%;
+    height: 220px;
   }
   .general__img-wrapp {
-    height: 150px;
+    text-align: center;
+    height: 200px;
   }
   .general__img-wrapp img {
-    height: 150px;
+    height: 170px;
   }
   .offers__container {
     margin: 70px auto;
